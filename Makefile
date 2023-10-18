@@ -57,6 +57,9 @@ OS := $(shell uname)
 # For Tesla GA10x cards, RTX 3090, RTX 3080, RTX 3070, RTX A6000, RTX A40 uncomment:
 # ARCH= -gencode arch=compute_86,code=[sm_86,compute_86]
 
+# For Jetson AGX Orin, Jetson Orin NX, Jetson Orin Nano uncomment:
+# ARCH= -gencode arch=compute_87,code=[sm_87,compute_87]
+
 
 VPATH=./src/
 EXEC=darknet
